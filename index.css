@@ -1,0 +1,36 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Google Sans", Roboto, arial, sans-serif;
+}
+
+#navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: auto;
+}
+
+#logo {
+  font-size: 16px;
+  font-weight: 400;
+  color: #335ff4;
+}
+
+#contact {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#community {
+  font-weight: 600;
+}
+
+#description {
+  height: 600px;
+  background-color: #335ff4;
+}

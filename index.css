@@ -49,7 +49,12 @@ body {
   width: 500px;
   margin-right: 60px;
   padding: 30px;
-  justify-content: center;
+}
+
+#leftDesc > h1 {
+  text-align: start;
+  line-height: 1.5;
+  font-size: 40px;
 }
 
 #leftDesc > p {
@@ -86,14 +91,17 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  font-size: 18px;
+}
+
+#feature > p {
+  font-size: 22px;
 }
 
 .magzine {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 28px;
+  font-size: 30px;
   color: #335ff4;
 }
 
@@ -106,28 +114,37 @@ body {
 /* About Section*/
 
 #about {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  font-size: 16px;
+  font-size: 18px;
+  margin: auto;
+}
+
+#aboutHeading {
+  font-size: 22px;
 }
 
 #about > p {
   text-align: center;
-  width: 65%;
+  width: 80%;
   margin: auto;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: -10px;
+}
+
+#about > h2 {
+  margin-top: -10px;
 }
 
 #aboutImg > img {
   max-width: 100%;
   border-radius: 50%;
   height: 400px;
-  border: 5px solid white;
+  border: 10px solid #ced6ff;
 }
 
 /* Social Media */
@@ -151,8 +168,13 @@ body {
   padding: 2% 0;
 }
 
-.serviceHeader > p,
-h1 {
+.serviceHeader > p {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.serviceHeader > h1 {
   text-align: center;
   margin-bottom: 15px;
 }
@@ -162,6 +184,7 @@ h1 {
   text-align: start;
   color: black;
 }
+
 
 .buttons {
   display: flex;
@@ -208,6 +231,10 @@ h1 {
   font-size: 28px;
 }
 
+.secLeft > p{
+  font-size: 18px;
+}
+
 .secLeftSpan {
   display: flex;
   flex-direction: row;
@@ -218,6 +245,11 @@ h1 {
   width: 20px;
   margin-right: 5px;
 }
+
+.secLeftSpan > p{
+  font-size: 18px;
+}
+
 .secRight > img {
   width: 400px;
   height: 450px;
@@ -334,6 +366,10 @@ h1 {
   text-align: center;
 }
 
+.testimonials > p{
+  font-size: 22px;
+}
+
 .testCards {
   display: grid;
   grid-template-columns: repeat(3, 320px);
@@ -374,6 +410,14 @@ h1 {
   flex-direction: column;
 }
 
+.media > p{
+  font-size: 22px;
+}
+
+.media > h2{
+  font-size: 30px;
+}
+
 #mediaImage {
   width: 60%;
   margin: auto;
@@ -396,6 +440,14 @@ h3 {
   text-align: center;
 }
 
+.contactSect > h4{
+  font-size: 22px;
+}
+
+.contactSect > h3{
+  font-size: 30px;
+}
+
 .contacts {
   margin-top: 20px;
   width: 100%;
@@ -407,17 +459,17 @@ h3 {
 
 .contactCard {
   display: flex;
-  gap: 10px;
+  gap: 40px;
 }
 
 .name :nth-child(1) {
-  font-weight: 400;
+  font-weight: 600;
   color: gray;
 }
 
 .contactCard > img {
   width: 40px;
-  height: 40px;
+  height: 50px;
 }
 
 /* ---------footer------ */
@@ -502,9 +554,9 @@ li > img {
   margin-top: -30px;
 }
 
-@media screen and (max-width: 632px) {
+@media screen and (max-width: 768px) {
   #navbar {
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
   }
 
@@ -518,39 +570,70 @@ li > img {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
     background-color: #335ff4;
   }
 
   .hamburger {
     display: block;
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
   #description {
-    height: 800px;
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: start;
   }
 
+  #leftDesc {
+    width: 85%;
+    margin-top: -3px;
+  }
+
+  #leftDesc > h1 {
+    width: 100%;
+    font-size: 35px;
+  }
+
+  #leftDesc > p {
+    width: 90%;
+  }
+
+  #leftDesc > button {
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    font-size: 22px;
+  }
+
+  #rightDesc {
+    margin-top: -60px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
   #rightDesc > img {
-    height: 300px;
-    width: 300px;
-    margin-top: 10px;
+    height: 100%;
+    width: 80%;
     border-radius: 30px;
-    background-color: #335ff4;
-    margin-left: 100px;
+    padding: auto;
   }
 
   #feature {
-    margin-top: 50px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
   }
 
   .magzine {
-    display: flex;
-    font-size: 22px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #forbes {
+    display: none;
   }
 
   #about {
@@ -562,16 +645,21 @@ li > img {
   }
 
   #about > p {
-    font-size: 18px;
-    width: 80%;
+    font-size: 20px;
+    width: 75%;
     margin: auto;
+  }
+
+  #about > h2 {
+    width: 80%;
+    font-size: 30px;
   }
 
   #aboutImg > img {
     max-width: 90%;
     border-radius: 50%;
     height: 300px;
-    border: 5px solid white;
+    border: 10px solid #ced6ff;
   }
 
   #socialMedia {
@@ -580,8 +668,24 @@ li > img {
     margin-top: 20px;
   }
 
+  .services {
+    width: 90%;
+    margin: auto;
+  }
+
+  .serviceHeader > p {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .buttons {
+    width: 95%;
+    margin-left: -20px;
+  }
+
   .serviceHeader > h1 {
-    font-size: 20px;
+    padding: auto;
+    font-size: 33px;
     text-align: center;
     margin-bottom: 15px;
   }
@@ -589,7 +693,8 @@ li > img {
   .sec {
     display: flex;
     flex-direction: column;
-    height: 1000px;
+    height: fit-content;
+    width: 90%;
   }
 
   .secLeft {
@@ -599,25 +704,58 @@ li > img {
     margin-left: 10px;
   }
 
-  .secLeft > h1,
-  p {
-    width: 70%;
-    font-size: 18px;
+  .secLeft > h1 {
+    width: 100%;
+    font-size: 36px;
     padding-left: 20px;
   }
 
+  .secLeft > p {
+    width: 100%;
+    margin-top: -20px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .secLeftSpan {
+    font-size: 24px;
+  }
+
+  .secLeft > button {
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    font-size: 20px;
+  }
+
   .secRight > img {
-    width: 400px;
+    width: 100%;
     height: 450px;
     border-radius: 30px;
   }
 
   .courses {
-    margin-top: 650px;
+    margin-top: 900px;
   }
 
   .testimonials > h2 {
     font-size: 16px;
+  }
+
+  .media > p {
+    font-size: 30px;
+  }
+
+  .media > h2 {
+    width: 100%;
+    font-size: 36px;
+    margin-top: -10px;
+  }
+
+  #mediaImage {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
   }
 
   .domeupper {
@@ -629,6 +767,12 @@ li > img {
     color: white;
   }
 
+  .domeupper > button {
+    width: 100%;
+    font-size: 20px;
+    height: 50px;
+  }
+
   .domelower {
     width: 100%;
     display: flex;
@@ -637,14 +781,14 @@ li > img {
   }
 
   .domephone {
-    height: 70%;
-    width: 30%;
+    height: 80%;
+    width: 40%;
     margin-top: -30px;
   }
 
   .domelaptop {
-    height: 50%;
-    width: 40%;
+    height: 60%;
+    width: 50%;
     margin-top: -30px;
   }
 
@@ -671,8 +815,8 @@ li > img {
     margin-left: 30px;
   }
 
-  .contactSect{
+  .contactSect {
     margin-top: 50px;
-    height: 500px;
+    height: auto;
   }
 }
